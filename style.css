@@ -75,7 +75,16 @@ a:hover { text-decoration: underline; }
 /* hero */
 .hero { padding-top: 6rem; padding-bottom: 3rem; }
 .eyebrow { color: var(--accent); font-size: 0.9rem; margin: 0 0 0.75rem; }
-h1 { font-size: clamp(2.6rem, 7vw, 4rem); line-height: 1.05; letter-spacing: -0.035em; margin: 0 0 1.25rem; }
+h1 { font-size: clamp(2.6rem, 7vw, 4rem); line-height: 1.05; letter-spacing: -0.035em; margin: 0; }
+.name-row { display: flex; align-items: center; gap: 1.25rem; margin: 0 0 1.25rem; }
+.avatar {
+  flex: none;
+  width: 96px; height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 0 6px var(--accent-soft);
+}
 .lede { font-size: 1.2rem; max-width: 40rem; color: var(--muted); margin: 0 0 1.5rem; }
 .lede strong { color: var(--fg); font-weight: 600; }
 .meta { font-size: 0.85rem; color: var(--muted); display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
@@ -278,6 +287,8 @@ footer { padding-top: 3rem; padding-bottom: 3rem; font-size: 0.8rem; }
   .nav-links a:nth-child(3) { display: none; }
   .cards { grid-template-columns: 1fr; }
   .hero { padding-top: 4rem; }
+  .avatar { width: 72px; height: 72px; box-shadow: 0 0 0 4px var(--accent-soft); }
+  .name-row { gap: 1rem; }
   .contact { padding: 1.75rem; }
 }
 @media (max-width: 520px) {
