@@ -2,18 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jacob Reed · Information Security Engineer</title>
   <meta name="description" content="Jacob Reed — Lead Information Security Engineer at Mastercard focused on enterprise cryptography, PKI, and payment data protection.">
+  <link rel="canonical" href="https://jake32321.github.io/">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://jake32321.github.io/">
+  <meta property="og:site_name" content="Jacob Reed">
+  <meta property="og:title" content="Jacob Reed · Information Security Engineer">
+  <meta property="og:description" content="Lead Information Security Engineer at Mastercard focused on enterprise cryptography, PKI, and payment data protection.">
+  <meta property="og:image" content="https://jake32321.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Jacob Reed, Lead Information Security Engineer at Mastercard">
+  <meta property="profile:first_name" content="Jacob">
+  <meta property="profile:last_name" content="Reed">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jacob Reed · Information Security Engineer">
+  <meta name="twitter:description" content="Lead Information Security Engineer at Mastercard focused on enterprise cryptography, PKI, and payment data protection.">
+  <meta name="twitter:image" content="https://jake32321.github.io/assets/og-image.png">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <meta name="theme-color" content="#0b0f14" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#f7f9fb" media="(prefers-color-scheme: light)">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
   <div class="grid-bg" aria-hidden="true"></div>
@@ -310,21 +326,6 @@
   <footer class="wrap">
     <p class="mono dim">&copy; <span id="year"></span> Jacob Reed</p>
   </footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const toggle = document.querySelector('.toggle-all');
-    const roles = document.querySelectorAll('#experience details.org');
-    const sync = () => {
-      const allOpen = [...roles].every(d => d.open);
-      toggle.textContent = allOpen ? 'collapse all' : 'expand all';
-      toggle.setAttribute('aria-pressed', allOpen);
-    };
-    toggle.addEventListener('click', () => {
-      const open = toggle.getAttribute('aria-pressed') !== 'true';
-      roles.forEach(d => { d.open = open; });
-      sync();
-    });
-    roles.forEach(d => d.addEventListener('toggle', sync));
-  </script>
+  <script src="assets/site.js?v=1"></script>
 </body>
 </html>

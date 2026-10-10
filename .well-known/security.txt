@@ -1,0 +1,5 @@
+# Security contact for jake32321.github.io (RFC 9116)
+Contact: https://www.linkedin.com/in/jacob-reed-36929b73/
+Expires: 2027-10-09T00:00:00.000Z
+Preferred-Languages: en, de
+Canonical: https://jake32321.github.io/.well-known/security.txt
