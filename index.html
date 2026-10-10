@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
   <div class="grid-bg" aria-hidden="true"></div>
@@ -78,54 +78,198 @@
     </section>
 
     <section id="experience">
-      <h2><span class="mono idx">02</span> Experience</h2>
+      <div class="section-head">
+        <h2><span class="mono idx">02</span> Experience</h2>
+        <button type="button" class="toggle-all mono" aria-pressed="false">expand all</button>
+      </div>
 
-      <div class="org">
+      <article class="org">
         <div class="org-head">
-          <h3>Mastercard</h3>
-          <span class="mono dim">2017 — present · O'Fallon, MO</span>
+          <span class="logo"><img src="assets/logos/mastercard.svg" alt="" width="40" height="40"></span>
+          <div class="org-title">
+            <h3>Mastercard</h3>
+            <span class="mono dim">2017 — present · O'Fallon, MO</span>
+          </div>
         </div>
         <ol class="timeline">
           <li class="current">
-            <div class="row"><h4>Lead Information Security Engineer</h4><span class="mono dim">2024 — now</span></div>
-            <p class="team">Enterprise Cryptographic Governance</p>
+            <div class="role-static">
+              <div class="row"><h4>Lead Information Security Engineer</h4><span class="mono dim">2024 — now</span></div>
+              <p class="team">Enterprise Cryptographic Governance</p>
+            </div>
           </li>
           <li>
-            <div class="row"><h4>Lead Software Development Engineer</h4><span class="mono dim">2022 — 2024</span></div>
-            <p class="team">Application Security</p>
-            <p>Led a team of three building Node.js services that encrypt client PCI and PII data in the payment processing platform, backed by HSMs, mutual TLS, and PCI DSS reviews.</p>
+            <details>
+              <summary>
+                <div class="row"><h4>Lead Software Development Engineer</h4><span class="mono dim">2022 — 2024</span></div>
+                <p class="team">Application Security</p>
+                <p class="blurb">Led a team of three building Node.js services that encrypt client PCI and PII data in the payment processing platform.</p>
+              </summary>
+              <ul class="bullets">
+                <li>Designed scalable services with Node.js, Hapi.js, and Redis that process large volumes of payment transactions while preserving data confidentiality, integrity, and availability.</li>
+                <li>Implemented encryption protocols and security controls using HSMs, mutual TLS, and PCI DSS compliance reviews.</li>
+                <li>Mentored engineers on secure coding through code review and SonarQube / Checkmarx scanning.</li>
+                <li>Partnered with product owners, analysts, and stakeholders to turn requirements into technical designs and delivery plans.</li>
+              </ul>
+            </details>
           </li>
           <li>
-            <div class="row"><h4>Senior Software Engineer</h4><span class="mono dim">2020 — 2022</span></div>
-            <p class="team">Application Security</p>
-            <p>Shipped Mastercard's first cryptographic REST APIs on Azure. Automated client onboarding with Bitbucket webhooks and Jenkins, cutting complexity and review time by 50%.</p>
+            <details>
+              <summary>
+                <div class="row"><h4>Senior Software Engineer</h4><span class="mono dim">2020 — 2022</span></div>
+                <p class="team">Application Security</p>
+                <p class="blurb">Shipped Mastercard's first cryptographic REST APIs on Azure and automated client onboarding.</p>
+              </summary>
+              <ul class="bullets">
+                <li>Redesigned client onboarding with Bitbucket webhooks and Jenkins multibranch pipelines, cutting complexity and review time by 50%.</li>
+                <li>Built and deployed cryptographic REST APIs to Azure. Ours was the first team at Mastercard to deploy there.</li>
+                <li>Integrated the certificate authority Node.js API into the product using PowerShell, automating certificate signing.</li>
+                <li>Migrated ~80,000 TLS certificates from a legacy vendor product to a new automated solution in a few hours.</li>
+              </ul>
+            </details>
           </li>
           <li>
-            <div class="row"><h4>Software Engineer II</h4><span class="mono dim">2019 — 2020</span></div>
-            <p class="team">Corporate Security Engineering</p>
-            <p>Built a mission-critical service that automates certificate signing and delivery through internal CAs. Migrated ~80,000 TLS certificates off a legacy vendor product in a few hours.</p>
+            <details>
+              <summary>
+                <div class="row"><h4>Software Engineer II</h4><span class="mono dim">2019 — 2020</span></div>
+                <p class="team">Corporate Security Engineering</p>
+                <p class="blurb">Built a mission-critical service that automates certificate signing and delivery through internal CAs.</p>
+              </summary>
+              <ul class="bullets">
+                <li>Automated TLS certificate signing and delivery through internal certificate authorities, removing manual delays.</li>
+                <li>Worked with vendor teams to integrate the CA's Node.js REST API into their product through PowerShell scripts.</li>
+                <li>Migrated ~80,000 TLS certificates off a legacy vendor product in a few hours with no disruption.</li>
+              </ul>
+            </details>
           </li>
           <li>
-            <div class="row"><h4>Associate Software Engineer</h4><span class="mono dim">2018 — 2019</span></div>
-            <p class="team">Corporate Security Engineering</p>
-            <p>Built Node.js APIs for cryptographic operations and certificate management supporting Apple Pay, Android Pay, and Masterpass.</p>
+            <details>
+              <summary>
+                <div class="row"><h4>Associate Software Engineer</h4><span class="mono dim">2018 — 2019</span></div>
+                <p class="team">Corporate Security Engineering</p>
+                <p class="blurb">Built cryptographic and certificate-management APIs for Apple Pay, Android Pay, and Masterpass.</p>
+              </summary>
+              <ul class="bullets">
+                <li>Developed high-performance Node.js APIs with Docker, RabbitMQ, MS SQL, PowerShell, and Redis.</li>
+                <li>Managed cryptographic operations and thousands of certificates for leading digital payment platforms.</li>
+                <li>Delivered internal security solutions built on X.509v3, TLS, mTLS, and PCI DSS.</li>
+                <li>Documented APIs with OpenAPI 3.0.</li>
+              </ul>
+            </details>
           </li>
           <li>
-            <div class="row"><h4>Software Engineer Intern</h4><span class="mono dim">2017</span></div>
-            <p class="team">Corporate Security Engineering</p>
+            <details>
+              <summary>
+                <div class="row"><h4>Software Engineer Intern</h4><span class="mono dim">2017</span></div>
+                <p class="team">Corporate Security Engineering</p>
+                <p class="blurb">Built RESTful cryptography and certificate APIs and took part in table-top security exercises.</p>
+              </summary>
+              <ul class="bullets">
+                <li>Built Node.js REST APIs for cryptographic operations and certificate management for Apple Pay, Android Pay, and Masterpass.</li>
+                <li>Took part in table-top security exercises and designed new applications for community organizations.</li>
+              </ul>
+            </details>
           </li>
         </ol>
-      </div>
+      </article>
 
-      <div class="earlier">
-        <h3 class="mono dim small">earlier</h3>
-        <ul>
-          <li><span>Undergraduate Research Assistant, <em>Southern Illinois University</em></span><span class="mono dim">2016 — 2017</span></li>
-          <li><span>Developer (contract), <em>Lunt Solar Systems</em></span><span class="mono dim">2017</span></li>
-          <li><span>Software Engineer &amp; R&amp;D Intern, <em>Levi, Ray &amp; Shoup</em></span><span class="mono dim">2016 — 2017</span></li>
-          <li><span>Shift Lead &amp; Certified Dell Technician, <em>SIU</em></span><span class="mono dim">2015 — 2017</span></li>
-        </ul>
-      </div>
+      <article class="org">
+        <div class="org-head">
+          <span class="logo"><img src="assets/logos/siu.png" alt="" width="40" height="40"></span>
+          <div class="org-title">
+            <h3>Southern Illinois University</h3>
+            <span class="mono dim">2015 — 2017 · Carbondale, IL</span>
+          </div>
+        </div>
+        <ol class="timeline">
+          <li>
+            <details>
+              <summary>
+                <div class="row"><h4>Undergraduate Research Assistant</h4><span class="mono dim">2016 — 2017</span></div>
+                <p class="blurb">Built a sentiment analysis tool for developer code reviews. The research won first place at the ACM Mid-Southeast Conference.</p>
+              </summary>
+              <ul class="bullets">
+                <li>Analyzed scraped Gerrit code review data with Python, NLTK, and machine learning.</li>
+                <li>Built a sentiment analysis tool that handles negation, emoticons, and punctuation in developer comments.</li>
+                <li>Improved accuracy by training a classifier on a labeled comment dataset and continually refining its dictionaries.</li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>
+                <div class="row"><h4>Shift Lead &amp; Certified Dell Technician</h4><span class="mono dim">2015 — 2017</span></div>
+                <p class="blurb">Led a campus repair desk diagnosing and fixing student computers and tablets.</p>
+              </summary>
+              <ul class="bullets">
+                <li>Diagnosed and repaired student hardware and software issues with a focus on customer service.</li>
+                <li>Managed a high volume of repairs using enterprise tools and processes.</li>
+                <li>Backed up critical user data before OS reinstalls.</li>
+              </ul>
+            </details>
+          </li>
+        </ol>
+      </article>
+
+      <article class="org">
+        <div class="org-head">
+          <span class="logo dark"><img src="assets/logos/lunt.svg" alt="" width="40" height="40"></span>
+          <div class="org-title">
+            <h3>Lunt Solar Systems</h3>
+            <span class="mono dim">2017 · Carbondale, IL</span>
+          </div>
+        </div>
+        <ol class="timeline">
+          <li>
+            <details>
+              <summary>
+                <div class="row"><h4>Developer (Contract)</h4><span class="mono dim">2017</span></div>
+                <p class="blurb">Built image-processing software for the lab to triage solar photo quality.</p>
+              </summary>
+              <ul class="bullets">
+                <li>Wrote a standalone C# Windows application that quickly sorts and scores solar images, separating clear captures from poor ones.</li>
+              </ul>
+            </details>
+          </li>
+        </ol>
+      </article>
+
+      <article class="org">
+        <div class="org-head">
+          <span class="logo"><img src="assets/logos/lrs.png" alt="" width="40" height="40"></span>
+          <div class="org-title">
+            <h3>Levi, Ray &amp; Shoup, Inc. (LRS)</h3>
+            <span class="mono dim">2016 — 2017 · Springfield, IL</span>
+          </div>
+        </div>
+        <ol class="timeline">
+          <li>
+            <details>
+              <summary>
+                <div class="row"><h4>Product Research &amp; Development Intern</h4><span class="mono dim">2016 — 2017</span></div>
+                <p class="blurb">Improved bank-merger handling in the PensionGold pension administration product.</p>
+              </summary>
+              <ul class="bullets">
+                <li>Worked with the PensionGold base product R&amp;D group on bank merger handling.</li>
+                <li>Re-implemented a page from a previous version with C# and ASP.NET to improve functionality and usability.</li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>
+                <div class="row"><h4>Software Engineer Intern</h4><span class="mono dim">2016</span></div>
+                <p class="blurb">Developed and tested pension web applications used by major cities.</p>
+              </summary>
+              <ul class="bullets">
+                <li>Built features for the PensionGold and Member Direct web apps with C#, ASP.NET, and MS SQL.</li>
+                <li>Supported development and deployment with Team Foundation Server and Visual Studio.</li>
+                <li>Built testing tools to detect and address abnormalities in production applications.</li>
+              </ul>
+            </details>
+          </li>
+        </ol>
+      </article>
     </section>
 
     <section id="background">
@@ -167,6 +311,21 @@
   <footer class="wrap">
     <p class="mono dim">&copy; <span id="year"></span> Jacob Reed</p>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.toggle-all');
+    const roles = document.querySelectorAll('#experience details');
+    const sync = () => {
+      const allOpen = [...roles].every(d => d.open);
+      toggle.textContent = allOpen ? 'collapse all' : 'expand all';
+      toggle.setAttribute('aria-pressed', allOpen);
+    };
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-pressed') !== 'true';
+      roles.forEach(d => { d.open = open; });
+      sync();
+    });
+    roles.forEach(d => d.addEventListener('toggle', sync));
+  </script>
 </body>
 </html>
