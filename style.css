@@ -104,18 +104,19 @@ h1 { font-size: clamp(2.6rem, 7vw, 4rem); line-height: 1.05; letter-spacing: -0.
 /* stats */
 .stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   border: 1px solid var(--line);
   border-radius: 12px;
-  background: var(--surface);
+  background: var(--line);
+  gap: 1px;
   overflow: hidden;
   padding: 0;
   margin-top: 1rem;
 }
-.stat { padding: 1.25rem 1.25rem 1.1rem; border-right: 1px solid var(--line); }
-.stat:last-child { border-right: 0; }
-.num { display: block; font-family: var(--mono); font-size: 1.75rem; font-weight: 500; color: var(--accent); }
-.label { display: block; font-size: 0.85rem; color: var(--muted); line-height: 1.4; margin-top: 0.25rem; }
+.stat { padding: 1.25rem; background: var(--surface); }
+.stat .year { display: block; font-size: 0.75rem; color: var(--accent); margin-bottom: 0.4rem; }
+.stat h3 { font-size: 0.98rem; line-height: 1.35; margin: 0; }
+.stat p { font-size: 0.86rem; color: var(--muted); line-height: 1.5; margin: 0.4rem 0 0; }
 
 /* sections */
 section { padding: 4rem 0 0; }
@@ -277,8 +278,6 @@ footer { padding-top: 3rem; padding-bottom: 3rem; font-size: 0.8rem; }
   .nav-links a:nth-child(3) { display: none; }
   .cards { grid-template-columns: 1fr; }
   .hero { padding-top: 4rem; }
-  .stat { border-right: 0; border-bottom: 1px solid var(--line); }
-  .stat:last-child { border-bottom: 0; }
   .contact { padding: 1.75rem; }
 }
 @media (max-width: 520px) {
