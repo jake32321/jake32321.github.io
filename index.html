@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jake Reed</title>
+  <meta name="description" content="Personal website of Jake Reed">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="wrap">
+    <h1>Jake Reed</h1>
+    <p class="tagline">Your role or one-line description goes here.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        A few sentences about who you are, what you work on, and what you're
+        interested in. Keep it short and friendly.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <article class="job">
+        <div class="job-head">
+          <h3>Job Title &middot; Company</h3>
+          <span class="dates">2023 – Present</span>
+        </div>
+        <ul>
+          <li>Something you accomplished, ideally with a measurable result.</li>
+          <li>Another highlight from this role.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <h3>Previous Title &middot; Previous Company</h3>
+          <span class="dates">2020 – 2023</span>
+        </div>
+        <ul>
+          <li>Key responsibility or achievement.</li>
+        </ul>
+      </article>
+
+      <h3>Skills</h3>
+      <ul class="skills">
+        <li>Skill One</li>
+        <li>Skill Two</li>
+        <li>Skill Three</li>
+        <li>Skill Four</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="links">
+        <li><a href="mailto:you@example.com">you@example.com</a></li>
+        <li><a href="https://github.com/jake32321">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/your-profile">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>&copy; <span id="year"></span> Jake Reed</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

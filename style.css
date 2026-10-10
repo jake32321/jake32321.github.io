@@ -1,0 +1,71 @@
+:root {
+  --bg: #fdfdfc;
+  --fg: #1f2328;
+  --muted: #5c6670;
+  --accent: #2563eb;
+  --line: #e5e7eb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111418;
+    --fg: #e6e8eb;
+    --muted: #9aa4ae;
+    --accent: #7aa7ff;
+    --line: #2a3037;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.wrap {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+header { padding-top: 4rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+h1 { margin: 0; font-size: 2.4rem; letter-spacing: -0.02em; }
+.tagline { margin: 0.25rem 0 1.25rem; color: var(--muted); }
+
+nav a { margin-right: 1.25rem; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+section { padding: 2rem 0; border-bottom: 1px solid var(--line); }
+h2 { margin-top: 0; font-size: 1.35rem; }
+h3 { font-size: 1.05rem; margin: 0; }
+
+.job { margin-bottom: 1.5rem; }
+.job-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  align-items: baseline;
+}
+.dates { color: var(--muted); font-size: 0.9rem; }
+.job ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+
+.skills, .links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skills li {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.15rem 0.75rem;
+  font-size: 0.9rem;
+}
+.links { gap: 1.5rem; }
+
+footer { padding-top: 2rem; padding-bottom: 3rem; color: var(--muted); font-size: 0.9rem; }
