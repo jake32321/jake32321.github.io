@@ -3,220 +3,169 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jacob Reed</title>
-  <meta name="description" content="Jacob Reed — Lead Information Security Engineer focused on enterprise cryptography, based in Greater St. Louis.">
+  <title>Jacob Reed · Information Security Engineer</title>
+  <meta name="description" content="Jacob Reed — Lead Information Security Engineer at Mastercard focused on enterprise cryptography, PKI, and payment data protection.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="wrap">
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <nav class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top"><span class="prompt">$</span> jreed<span class="cursor">_</span></a>
+      <div class="nav-links">
+        <a href="#focus">Focus</a>
+        <a href="#experience">Experience</a>
+        <a href="#background">Background</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top" class="wrap hero">
+    <p class="eyebrow mono">// information security engineer</p>
     <h1>Jacob Reed</h1>
-    <p class="tagline">Lead Information Security Engineer &middot; Enterprise Cryptography &middot; Greater St. Louis</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p class="lede">
+      I protect payment data at scale. At Mastercard I lead work on
+      <strong>enterprise cryptography</strong>, <strong>PKI</strong>, and the
+      systems that keep client PCI and PII data encrypted end to end.
+    </p>
+    <p class="meta mono">
+      <span class="status-dot"></span> Lead Information Security Engineer @ Mastercard
+      <span class="sep">/</span> Greater St. Louis
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="https://www.linkedin.com/in/jacob-reed-36929b73/">LinkedIn</a>
+      <a class="btn" href="https://github.com/jake32321">GitHub</a>
+    </div>
   </header>
 
   <main class="wrap">
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I'm a security engineer at Mastercard, where I've spent the last eight-plus years
-        protecting and encrypting client data across the payment processing platform. My work
-        sits where software engineering meets applied cryptography: Node.js services, HSMs,
-        certificate automation, and PCI DSS compliance.
-      </p>
-      <p>
-        I've led a team of engineers building scalable, secure services, and I care a lot about
-        DevOps fundamentals: solid CI/CD pipelines, automated validation, and systems that stay
-        stable in production.
-      </p>
+    <section class="stats" aria-label="Highlights">
+      <div class="stat"><span class="num">8+</span><span class="label">years securing payments at Mastercard</span></div>
+      <div class="stat"><span class="num">~80K</span><span class="label">TLS certificates migrated in hours</span></div>
+      <div class="stat"><span class="num">50%</span><span class="label">less onboarding complexity &amp; review time</span></div>
+      <div class="stat"><span class="num">1st</span><span class="label">Mastercard team to deploy crypto APIs to Azure</span></div>
+    </section>
+
+    <section id="focus">
+      <h2><span class="mono idx">01</span> Focus areas</h2>
+      <div class="cards">
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.5"/></svg>
+          <h3>Enterprise cryptography</h3>
+          <p>Cryptographic governance, HSM-backed key operations, and encryption of PCI and PII data across the payment platform.</p>
+        </article>
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H4z"/><path d="M8 20h8M12 16v4"/><path d="M8 9.5l2.5 2.5L16 8"/></svg>
+          <h3>PKI &amp; certificate automation</h3>
+          <p>X.509, TLS, and mTLS at scale: automated signing and delivery through internal CAs, and Apple Pay / Android Pay certificate management.</p>
+        </article>
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <h3>Compliance &amp; governance</h3>
+          <p>PCI DSS compliance reviews and security controls that hold up to audits and keep client data safe.</p>
+        </article>
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <h3>Secure engineering</h3>
+          <p>Node.js, Hapi.js, and Redis services, CI/CD with Jenkins, and secure code review with SonarQube and Checkmarx.</p>
+        </article>
+      </div>
     </section>
 
     <section id="experience">
-      <h2>Experience</h2>
+      <h2><span class="mono idx">02</span> Experience</h2>
 
-      <article class="company">
-        <div class="job-head">
+      <div class="org">
+        <div class="org-head">
           <h3>Mastercard</h3>
-          <span class="dates">O'Fallon, MO &middot; 2017 – Present</span>
+          <span class="mono dim">2017 — present · O'Fallon, MO</span>
         </div>
+        <ol class="timeline">
+          <li class="current">
+            <div class="row"><h4>Lead Information Security Engineer</h4><span class="mono dim">2024 — now</span></div>
+            <p class="team">Enterprise Cryptographic Governance</p>
+          </li>
+          <li>
+            <div class="row"><h4>Lead Software Development Engineer</h4><span class="mono dim">2022 — 2024</span></div>
+            <p class="team">Application Security</p>
+            <p>Led a team of three building Node.js services that encrypt client PCI and PII data in the payment processing platform, backed by HSMs, mutual TLS, and PCI DSS reviews.</p>
+          </li>
+          <li>
+            <div class="row"><h4>Senior Software Engineer</h4><span class="mono dim">2020 — 2022</span></div>
+            <p class="team">Application Security</p>
+            <p>Shipped Mastercard's first cryptographic REST APIs on Azure. Automated client onboarding with Bitbucket webhooks and Jenkins, cutting complexity and review time by 50%.</p>
+          </li>
+          <li>
+            <div class="row"><h4>Software Engineer II</h4><span class="mono dim">2019 — 2020</span></div>
+            <p class="team">Corporate Security Engineering</p>
+            <p>Built a mission-critical service that automates certificate signing and delivery through internal CAs. Migrated ~80,000 TLS certificates off a legacy vendor product in a few hours.</p>
+          </li>
+          <li>
+            <div class="row"><h4>Associate Software Engineer</h4><span class="mono dim">2018 — 2019</span></div>
+            <p class="team">Corporate Security Engineering</p>
+            <p>Built Node.js APIs for cryptographic operations and certificate management supporting Apple Pay, Android Pay, and Masterpass.</p>
+          </li>
+          <li>
+            <div class="row"><h4>Software Engineer Intern</h4><span class="mono dim">2017</span></div>
+            <p class="team">Corporate Security Engineering</p>
+          </li>
+        </ol>
+      </div>
 
-        <div class="role">
-          <div class="job-head">
-            <h4>Lead Information Security Engineer, Enterprise Cryptographic Governance</h4>
-            <span class="dates">Aug 2024 – Present</span>
-          </div>
+      <div class="earlier">
+        <h3 class="mono dim small">earlier</h3>
+        <ul>
+          <li><span>Undergraduate Research Assistant, <em>Southern Illinois University</em></span><span class="mono dim">2016 — 2017</span></li>
+          <li><span>Developer (contract), <em>Lunt Solar Systems</em></span><span class="mono dim">2017</span></li>
+          <li><span>Software Engineer &amp; R&amp;D Intern, <em>Levi, Ray &amp; Shoup</em></span><span class="mono dim">2016 — 2017</span></li>
+          <li><span>Shift Lead &amp; Certified Dell Technician, <em>SIU</em></span><span class="mono dim">2015 — 2017</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="background">
+      <h2><span class="mono idx">03</span> Background</h2>
+      <div class="two-col">
+        <div>
+          <h3 class="mono dim small">education</h3>
+          <p><strong>B.S. Computer Science</strong><br>Southern Illinois University Carbondale</p>
+          <p class="dim">Sigma Beta Phi · ACM @ SIUC</p>
         </div>
-
-        <div class="role">
-          <div class="job-head">
-            <h4>Lead Software Development Engineer, Application Security</h4>
-            <span class="dates">Mar 2022 – Aug 2024</span>
-          </div>
-          <ul>
-            <li>Led a team of three engineers building Node.js services that protect and encrypt client PCI and PII data in the payment processing platform.</li>
-            <li>Designed scalable solutions with Node.js, Hapi.js, and Redis handling large volumes of payment transactions.</li>
-            <li>Implemented encryption and security controls using HSMs, mutual TLS, and PCI DSS compliance reviews.</li>
-            <li>Mentored engineers on secure coding through code review and SonarQube / Checkmarx scanning.</li>
+        <div>
+          <h3 class="mono dim small">recognition</h3>
+          <ul class="plain">
+            <li>Corporate Security Challenge Coin, Mastercard</li>
+            <li>1st place, ACM Mid-Southeast Conference (undergraduate research)</li>
+            <li>Woodmen Club of America Scholarship</li>
+            <li>Dean's List</li>
           </ul>
         </div>
-
-        <div class="role">
-          <div class="job-head">
-            <h4>Senior Software Engineer, Application Security</h4>
-            <span class="dates">Oct 2020 – Mar 2022</span>
-          </div>
-          <ul>
-            <li>Redesigned client onboarding with Bitbucket webhooks and Jenkins multibranch pipelines, cutting complexity and review time by 50%.</li>
-            <li>Built and deployed cryptographic REST APIs to Azure. Ours was the first team at Mastercard to deploy there.</li>
-            <li>Migrated ~80,000 TLS certificates from a legacy vendor product to a new automated solution in a few hours.</li>
-          </ul>
-        </div>
-
-        <div class="role">
-          <div class="job-head">
-            <h4>Software Engineer II, Corporate Security Engineering</h4>
-            <span class="dates">Feb 2019 – Oct 2020</span>
-          </div>
-          <ul>
-            <li>Built a mission-critical application automating certificate signing and delivery through internal certificate authorities.</li>
-            <li>Integrated the certificate authority Node.js API with vendor products via PowerShell, automating the signing process.</li>
-          </ul>
-        </div>
-
-        <div class="role">
-          <div class="job-head">
-            <h4>Associate Software Engineer, Corporate Security Engineering</h4>
-            <span class="dates">Feb 2018 – Mar 2019</span>
-          </div>
-          <ul>
-            <li>Developed Node.js APIs (Docker, RabbitMQ, MS SQL, Redis, OAS 3.0) for cryptographic operations and certificate management supporting Apple Pay, Android Pay, and Masterpass.</li>
-          </ul>
-        </div>
-
-        <div class="role">
-          <div class="job-head">
-            <h4>Intern Software Engineer, Corporate Security Engineering</h4>
-            <span class="dates">Jun 2017 – Aug 2017</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="company">
-        <div class="job-head">
-          <h3>Southern Illinois University</h3>
-          <span class="dates">Carbondale, IL &middot; 2015 – 2017</span>
-        </div>
-        <div class="role">
-          <div class="job-head">
-            <h4>Undergraduate Research Assistant</h4>
-            <span class="dates">Sep 2016 – May 2017</span>
-          </div>
-          <ul>
-            <li>Built a sentiment analysis tool in Python with NLTK to study developer interactions in Gerrit code review data. This research won first place at the ACM Mid-Southeast Conference.</li>
-          </ul>
-        </div>
-        <div class="role">
-          <div class="job-head">
-            <h4>Shift Lead &amp; Certified Dell Technician</h4>
-            <span class="dates">Sep 2015 – Dec 2017</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="company">
-        <div class="job-head">
-          <h3>Lunt Solar Systems</h3>
-          <span class="dates">Carbondale, IL &middot; Aug 2017</span>
-        </div>
-        <div class="role">
-          <div class="job-head"><h4>Developer (Contract)</h4></div>
-          <ul>
-            <li>Built a C# Windows desktop application for the lab to quickly sort and assess the quality of solar images.</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="company">
-        <div class="job-head">
-          <h3>Levi, Ray &amp; Shoup, Inc. (LRS)</h3>
-          <span class="dates">Springfield, IL &middot; 2016 – 2017</span>
-        </div>
-        <div class="role">
-          <div class="job-head">
-            <h4>Product Research &amp; Development Intern</h4>
-            <span class="dates">Dec 2016 – Jan 2017</span>
-          </div>
-        </div>
-        <div class="role">
-          <div class="job-head">
-            <h4>Software Engineer Intern</h4>
-            <span class="dates">May 2016 – Aug 2016</span>
-          </div>
-          <ul>
-            <li>Developed and tested the PensionGold and Member Direct web applications (C#, ASP.NET, MS SQL), used by major cities for pension and retirement management.</li>
-          </ul>
-        </div>
-      </article>
-
-      <h3 class="subhead">Skills</h3>
-      <ul class="skills">
-        <li>Applied Cryptography</li>
-        <li>HSMs</li>
-        <li>PKI / X.509 / TLS</li>
-        <li>PCI DSS</li>
-        <li>Security Compliance</li>
-        <li>Node.js</li>
-        <li>Hapi.js</li>
-        <li>Redis</li>
-        <li>PowerShell</li>
-        <li>MS SQL</li>
-        <li>Docker</li>
-        <li>Jenkins / CI/CD</li>
-        <li>Azure</li>
-        <li>Alteryx</li>
+      </div>
+      <h3 class="mono dim small">toolkit</h3>
+      <ul class="tags">
+        <li>HSMs</li><li>PKI</li><li>X.509</li><li>TLS / mTLS</li><li>PCI DSS</li>
+        <li>Node.js</li><li>Hapi.js</li><li>Redis</li><li>PowerShell</li><li>MS SQL</li>
+        <li>Docker</li><li>Jenkins</li><li>Azure</li><li>SonarQube</li><li>Checkmarx</li>
       </ul>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <div class="job-head">
-        <h3>Southern Illinois University Carbondale</h3>
-        <span class="dates">2015 – 2017</span>
+    <section id="contact" class="contact">
+      <h2><span class="mono idx">04</span> Get in touch</h2>
+      <p>Interested in applied cryptography, PKI, or payment security? I'm happy to connect.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://www.linkedin.com/in/jacob-reed-36929b73/">Connect on LinkedIn</a>
+        <a class="btn" href="https://github.com/jake32321">GitHub</a>
       </div>
-      <p class="detail">B.S., Computer Science &middot; Sigma Beta Phi, ACM @ SIUC</p>
-      <div class="job-head">
-        <h3>Lincoln Land Community College</h3>
-        <span class="dates">2013 – 2015</span>
-      </div>
-      <p class="detail">Computer Science</p>
-
-      <h3 class="subhead">Honors</h3>
-      <ul class="plain">
-        <li>Corporate Security Challenge Coin, Mastercard</li>
-        <li>First Place (Undergraduate Division), ACM Mid-Southeast Conference</li>
-        <li>Woodmen Club of America Scholarship</li>
-        <li>Dean's List</li>
-      </ul>
-
-      <h3 class="subhead">Languages</h3>
-      <p class="detail">English, German</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <ul class="links">
-        <li><a href="https://www.linkedin.com/in/jacob-reed-36929b73/">LinkedIn</a></li>
-        <li><a href="https://github.com/jake32321">GitHub</a></li>
-      </ul>
     </section>
   </main>
 
   <footer class="wrap">
-    <p>&copy; <span id="year"></span> Jacob Reed</p>
+    <p class="mono dim">&copy; <span id="year"></span> Jacob Reed</p>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
